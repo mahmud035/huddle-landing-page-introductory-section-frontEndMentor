@@ -1,0 +1,54 @@
+@media (max-width: 576px) {
+  .container {
+    width: 85%;
+  }
+
+  header {
+    width: 100vw;
+    height: 100vh;
+    background: var(--violet) url(../images/bg-mobile.svg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  nav > img {
+    padding: 2rem 0 3rem;
+    width: 150px;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-img {
+    width: 100%;
+  }
+
+  .header-text {
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+
+  .header-text p {
+    font-size: 15px;
+    padding: 1.4rem 0;
+  }
+
+  a.btn {
+    padding: 0.7rem 5rem;
+    font-size: 15px;
+  }
+
+  .social-icons {
+    right: 50%;
+    transform: translateX(50%);
+    justify-content: center;
+  }
+}

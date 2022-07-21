@@ -71,7 +71,7 @@ body {
 /** Introductory Section */
 header {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background: var(--violet) url(../images/bg-desktop.svg) no-repeat;
   background-position: center center;
   background-size: cover;
@@ -146,7 +146,7 @@ a.btn:hover {
   background-color: transparent;
   border: 2px solid var(--white);
   border-radius: 50%;
-  padding: 5px 8px;
+  padding: 4px 7px;
   transition: 0.3s ease;
 }
 
