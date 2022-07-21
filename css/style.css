@@ -52,11 +52,13 @@ select {
 :root {
   --violet: hsl(257, 40%, 49%);
   --soft-magenta: hsl(300, 69%, 71%);
+  --white: #fff;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Common CSS Classes */
@@ -64,4 +66,98 @@ body {
   max-width: 1440px;
   width: 80%;
   margin-inline: auto;
+}
+
+/** Introductory Section */
+header {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--violet) url(../images/bg-desktop.svg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+nav > img {
+  padding: 2.5rem 0 4rem;
+  width: 220px;
+}
+
+.header-content {
+  display: flex;
+  align-items: start;
+  gap: 4rem;
+}
+
+.header-img {
+  width: 55%;
+}
+
+.header-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-text {
+  width: 45%;
+  padding-top: 3rem;
+}
+
+.header-text h1 {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.header-text p {
+  font-family: 'Open Sans', sans-serif;
+  color: #e6e6e6;
+  font-weight: 400;
+  padding: 2rem 0;
+  line-height: 26px;
+}
+
+a.btn {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  background-color: var(--white);
+  padding: 0.75rem 3rem;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: var(--soft-magenta);
+  color: var(--white);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  position: absolute;
+  right: 5rem;
+  bottom: 2.1rem;
+}
+
+.social-icons a {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  padding: 5px 8px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  border: 2px solid var(--soft-magenta);
+}
+
+.social-icons a i {
+  color: var(--white);
+}
+
+.social-icons a:hover i {
+  color: var(--soft-magenta);
 }
