@@ -1,14 +1,18 @@
 @media (max-width: 576px) {
-  .container {
-    width: 85%;
-  }
-
-  header {
+  body {
     width: 100vw;
     height: 100vh;
     background: var(--violet) url(../images/bg-mobile.svg) no-repeat;
     background-position: center center;
     background-size: cover;
+  }
+
+  header {
+    width: 100vw;
+    height: 100vh;
+    /* background: var(--violet) url(../images/bg-mobile.svg) no-repeat;
+    background-position: center center;
+    background-size: cover; */
     position: relative;
   }
 
